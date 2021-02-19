@@ -1,7 +1,7 @@
 # Usage
 
 ```js
-console.log(getbToRColorTemperature(40));
+console.log(getBToRColorTemperature(40));
 >>> rgb(255, 128, 0)
 ```
 
@@ -9,7 +9,7 @@ console.log(getbToRColorTemperature(40));
 const config = bToRColorTemperatureDefaultSettings();
 config.maxTemperature = 50;
 config.minTemperature = -10;
-console.log(getbToRColorTemperature(-10, config));
+console.log(getBToRColorTemperature(-10, config));
 >>> rgb(0, 128, 255)
 ```
 
