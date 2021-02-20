@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BToRColorTemperature.js</title>
+</head>
+
+<body>
+    <p>Temperature( -5&#8451 ~ 40&#8451 )</p>
+    <input type="range" min="-5" max="40" id="temperatureInput">
+    <script src="bToRColorTemperature.js"></script>
+    <script>
+        const temperatureInput = document.getElementById("temperatureInput");
+        const rangeOnChange = (e) => {
+            setColor(getBToRColorTemperature(e.target.value));
+            console.log(e.target.value);
+        }
+        const setColor = (value) => {
+            document.body.style.backgroundColor = value;
+        }
+        window.onload = () => {
+            temperatureInput.addEventListener("input", rangeOnChange);
+            setColor(getBToRColorTemperature(temperatureInput.value));
+        }
+    </script>
+</body>
+
+</html>
