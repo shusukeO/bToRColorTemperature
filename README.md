@@ -1,3 +1,7 @@
+# Sample
+
+[sample](https://shusukeo.github.io/bToRColorTemperature/sample/)
+
 # Usage
 
 ```js
