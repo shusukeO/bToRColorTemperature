@@ -13,7 +13,7 @@
         const temperatureInput = document.getElementById("temperatureInput");
         const rangeOnChange = (e) => {
             setColor(getBToRColorTemperature(e.target.value));
-            console.log(e.target.value);
+            console.log(getBToRColorTemperature(e.target.value));
         }
         const setColor = (value) => {
             document.body.style.backgroundColor = value;
